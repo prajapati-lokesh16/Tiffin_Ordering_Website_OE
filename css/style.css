@@ -1,0 +1,27 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f8f8f8; color: #222; }
+.navbar { background: #2d6a4f; padding: 1em; display: flex; gap: 1em; }
+.navbar a { color: #fff; text-decoration: none; font-weight: bold; }
+.navbar a:hover { text-decoration: underline; }
+.hero { background: #95d5b2; padding: 3em 1em; text-align: center; }
+.hero h1 { margin: 0 0 0.5em; font-size: 2.5em; }
+.hero .btn { background: #1b4332; color: #fff; padding: 0.7em 2em; border: none; border-radius: 4px; text-decoration: none; font-size: 1.2em; }
+.menu { padding: 2em 1em; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2em; }
+.menu-item { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 1em; text-align: center; }
+.menu-item img { width: 100%; max-width: 180px; border-radius: 8px; }
+.menu-item h3 { margin: 0.5em 0 0.2em; }
+.menu-item .price { color: #2d6a4f; font-weight: bold; }
+.menu-item form { margin-top: 1em; }
+.order-form, .contact-form, .login-form, .signup-form, .profile, .admin-dashboard, .admin-add-item, .admin-edit-item { background: #fff; max-width: 500px; margin: 2em auto; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+.order-form h2, .contact-form h2, .login-form h2, .signup-form h2, .profile h2, .admin-dashboard h2, .admin-add-item h2, .admin-edit-item h2 { margin-top: 0; }
+form label { display: block; margin: 1em 0 0.2em; }
+form input, form textarea, form button, form select { width: 100%; padding: 0.7em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px; }
+form button { background: #2d6a4f; color: #fff; border: none; cursor: pointer; font-size: 1em; }
+form button:hover { background: #40916c; }
+.success { color: #2d6a4f; }
+.error { color: #d90429; }
+.footer { background: #2d6a4f; color: #fff; text-align: center; padding: 1em 0; position: fixed; left: 0; bottom: 0; width: 100%; }
+table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+table, th, td { border: 1px solid #ccc; }
+th, td { padding: 0.7em; text-align: left; }
+@media (max-width: 600px) { .menu-grid { grid-template-columns: 1fr; } .order-form, .contact-form, .login-form, .signup-form, .profile, .admin-dashboard, .admin-add-item, .admin-edit-item { padding: 1em; } }
